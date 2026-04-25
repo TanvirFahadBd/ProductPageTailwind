@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root{
+    --color-primary:#B88E2F;
+}
+
+/* hero section css */
+
+.hero {
+    background: url(./images/background.png);
+    height: 316px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product css */
+
+.container {
+    max-width: 1320px;
+    padding: 34px 96px;
+}
+
+.fullproduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 47px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.texts .p2 {
+    border-bottom: 2px solid;
+}
+
+.mug {
+    max-width: 280px;
+    height: 177px;
+    overflow: hidden;
+}
+
+.mug img{
+    transition: 0.5s;
+}
+.mug img:hover{
+    transform: scale(1.1);
+}
+
+.btn1{
+    background: var(--color-primary);
+    color: aliceblue;
+    padding: 6px 18px;
+    border-radius: 6px;
+}
+
+.btn12{
+    background: var(--color-primary);
+    padding: 4px 8px;
+    color: rgb(22, 17, 17);
+}
+
+/* responsive */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 34px 40px; 
+    }
+
+    .fullproduct {
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+    }
+
+    .first .texts {
+        margin-bottom: 40px !important; 
+    }
+
+    .fuyt {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .full {
+        width: 100%; 
+        margin-bottom: 40px;
+    }
+
+    .bux {
+        display: none; 
+    }
+}
+
+
+@media (max-width: 640px) {
+    .hero {
+        height: 200px; 
+    }
+
+    .text-5xl {
+        font-size: 2rem; 
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .fullproduct {
+        grid-template-columns: 1fr; 
+    }
+
+  
+
+    .texss h1 {
+        font-size: 22px;
+    }
+
+    .btn12 {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+
+.fuyt {
+    display: flex;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.full.flex {
+    flex-shrink: 0; 
+    min-width: 250px; 
+}
+
+
+@media (max-width: 1024px) {
+    .bux {
+        height: auto;
+        margin: 20px 0;
+    }
+}
