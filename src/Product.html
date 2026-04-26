@@ -10,8 +10,54 @@
 </head>
 
 <body>
+
+    <!-- nav -->
+    <nav class="flex items-center justify-between px-10 py-6 bg-white shadow-sm relative">
+
+        <div class="flex items-center gap-2">
+            <img src="./images/logo.png" alt="Furniro Logo" class="w-10 h-8 object-contain">
+            <span class="text-2xl font-bold font-serif text-black tracking-tight">Furniro</span>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+        <label for="menu-toggle" class="md:hidden cursor-pointer z-50">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </label>
+
+        <ul class="hidden md:flex items-center gap-10 text-base font-medium text-black
+               peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-full 
+               peer-checked:left-0 peer-checked:w-full peer-checked:bg-white peer-checked:py-6 
+               peer-checked:shadow-md peer-checked:z-40">
+            <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
+            <li><a href="#" class="hover:text-red-500 transition">Shop</a></li>
+            <li><a href="#" class="hover:text-red-500 transition">About</a></li>
+            <li><a href="#" class="hover:text-red-500 transition">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 md:gap-8">
+            <a href="#" class="hover:scale-110 transition">
+                <img src="./NavImages/users.png" alt="User" class="w-6 h-6">
+            </a>
+            <a href="#" class="hover:scale-110 transition">
+                <img src="./NavImages/serch.png" alt="Search" class="w-6 h-6">
+            </a>
+            <a href="#" class="hidden sm:block hover:scale-110 transition">
+                <img src="./NavImages/favorite.png" alt="Heart" class="w-6 h-6">
+            </a>
+            <a href="#" class="hover:scale-110 transition">
+                <img src="./NavImages/cart.png" alt="Cart" class="w-6 h-6">
+            </a>
+        </div>
+
+    </nav>
+    <!-- navend -->
+
     <!-- hero section -->
-    <section class="hero">
+    <section class="hero mb-[34px]">
         <div class="FullHero flex justify-center items-center flex-col gap-4">
             <div class="heroImages">
                 <img src="./images/logo.png" alt="">
@@ -104,16 +150,18 @@
                     </div>
                 </div>
             </div>
-            <hr class="border border-gray-500">
         </div>
     </section>
+    <div class="bdbox bg-gray-400 w-[100%] h-[1px]"></div>
+
+   
     <!-- GoToProduct page end -->
 
     <!-- genral Sectio -->
     <sectio class="Genral">
         <div class="filltext">
             <div class="container">
-                <div class="fuyt flex">
+                <div class="fuyt flex pb-[112px]">
                     <div class="full flex">
                         <div class="texts8 flex flex-col gap-[96px]">
                             <div class="texss flex flex-col gap-[28px]">
@@ -257,7 +305,7 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
         <!-- genral Sectio end -->
 
         <section class="HighGuality">
@@ -300,6 +348,60 @@
                 </div>
             </div>
         </section>
+
+        <!-- footer -->
+        <footer class="w-full border-t border-gray-200 pt-12 pb-8 px-6 md:px-12 lg:px-32">
+            <div
+                class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 border-b border-gray-200 pb-12">
+
+                <div class="flex flex-col">
+                    <h2 class="text-2xl font-bold mb-6 md:mb-8 text-center sm:text-left">Funiro.</h2>
+                    <address class="not-italic text-gray-400 leading-relaxed text-center sm:text-left">
+                        400 University Drive Suite 200 Coral <br class="hidden sm:block">
+                        Gables, <br class="hidden sm:block">
+                        FL 33134 USA
+                    </address>
+                </div>
+
+                <div class="flex flex-col items-center sm:items-start">
+                    <h3 class="text-gray-400 font-medium mb-6 md:mb-10">Links</h3>
+                    <ul class="space-y-4 md:space-y-8 font-bold text-black text-center sm:text-left">
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Shop</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center sm:items-start">
+                    <h3 class="text-gray-400 font-medium mb-6 md:mb-10">Help</h3>
+                    <ul class="space-y-4 md:space-y-8 font-bold text-black text-center sm:text-left">
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Payment Options</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Returns</a></li>
+                        <li><a href="#" class="hover:text-green-500 transition-colors">Privacy Policies</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center sm:items-start w-full">
+                    <h3 class="text-gray-400 font-medium mb-6 md:mb-10">Newsletter</h3>
+                    <div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-3 w-full">
+                        <div class="border-b border-black w-full lg:w-auto">
+                            <input type="email" placeholder="Enter Your Email Address"
+                                class="bg-transparent text-sm focus:outline-none pb-1 w-full text-green-800 placeholder:text-gray-400">
+                        </div>
+                        <button
+                            class="border-b border-black font-bold text-sm uppercase pb-1 hover:text-red-700 transition-colors shrink-0">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto mt-8 text-center sm:text-left">
+                <p class="text-black text-sm">2023 furino. All rights reserved</p>
+            </div>
+        </footer>
+        <!-- footerEnd -->
 </body>
 
 </html>
